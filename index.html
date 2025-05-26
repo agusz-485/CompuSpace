@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicio Técnico de Computadoras</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Compu Space - Servicio Técnico de Computadoras</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Ofrecemos soluciones rápidas y confiables para todo tipo de problemas informáticos. Conoce nuestros servicios y solicita tu asistencia técnica desde esta página.</p>
+      <div class="carousel">
+        <img src="assets/articulo-servicios-tecnico.jpg" alt="Servicio técnico 1">
+        <img src="assets/Reparación-Computadora_mobile_programas_450x340.jpg" alt="Servicio técnico 2">
+        <img src="assets/servicio-tecnico.jpg" alt="Servicio técnico 3">
+      </div>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios Disponibles</h2>
+      <div class="productos">
+        <div class="card">
+          <h3>Reparación de Hardware</h3>
+          <p>Reemplazo de piezas dañadas y mantenimiento físico del equipo.</p>
+        </div>
+        <div class="card">
+          <h3>Formateo e Instalación de Sistema</h3>
+          <p>Limpieza total del equipo e instalación de Windows/Linux con drivers y programas básicos.</p>
+        </div>
+        <div class="card">
+          <h3>Eliminación de Virus</h3>
+          <p>Escaneo y remoción de software malicioso sin pérdida de datos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reseñas">
+      <h2>Reseñas</h2>
+      <div class="reseñas">
+        <div class="review">"Excelente atención y rapidez. Mi computadora quedó como nueva." - Carla</div>
+        <div class="review">"Muy profesionales, resolvieron mi problema en el día." - Marcos</div>
+        <div class="review">"Buen precio y excelente servicio. Recomendado." - Lucía</div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CompuSpace - Servicio Técnico de Computadoras</p>
+  </footer>
+</body>
+</html>

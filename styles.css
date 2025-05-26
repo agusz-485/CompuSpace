@@ -1,0 +1,156 @@
+/* Reset y fuente */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* HEADER y NAV */
+header, footer {
+  background-color: #359643;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #444;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CARRUSEL */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  animation: slide 15s infinite;
+}
+
+.carousel img:nth-child(1) {
+  animation-delay: 0s;
+}
+.carousel img:nth-child(2) {
+  animation-delay: 5s;
+}
+.carousel img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes slide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* SERVICIOS (Flexbox) */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #f0f0f0;
+  padding: 1em;
+  border-radius: 8px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(79, 193, 104, 0.1);
+}
+
+/* RESEÑAS (Grid) */
+.reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.review {
+  background: #e8f0fe;
+  padding: 1em;
+  border-left: 5px solid #3367d6;
+  border-radius: 5px;
+}
+
+/* FORMULARIO RESPONSIVO */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+form label, form input, form textarea, form button {
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  padding: 8px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #3367d6;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form button:hover {
+  background-color: #254ba8;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+h2{
+  text-align: center;
+}
